@@ -11,9 +11,13 @@
 		0D74CF7326972810002F99BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D74CF7226972810002F99BE /* SceneDelegate.swift */; };
 		0D74CF7526972810002F99BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D74CF7426972810002F99BE /* ViewController.swift */; };
 		0D74CF7A26972812002F99BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D74CF7926972812002F99BE /* Assets.xcassets */; };
-		0D74CF7D26972812002F99BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D74CF7B26972812002F99BE /* LaunchScreen.storyboard */; };
 		0D74CF8626972870002F99BE /* ViewControllerPt2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D74CF8426972870002F99BE /* ViewControllerPt2.swift */; };
 		0D74CF8726972870002F99BE /* ViewControllerPt2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D74CF8526972870002F99BE /* ViewControllerPt2.xib */; };
+		0D74CF8A26974361002F99BE /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D74CF8826974361002F99BE /* ViewController2.swift */; };
+		0D74CF8B26974361002F99BE /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D74CF8926974361002F99BE /* ViewController2.xib */; };
+		0D80E249269864E900DA6B43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D80E248269864E900DA6B43 /* LaunchScreen.storyboard */; };
+		0D80E24C26986FC200DA6B43 /* ForgetPasswordForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D80E24A26986FC200DA6B43 /* ForgetPasswordForm.swift */; };
+		0D80E24D26986FC200DA6B43 /* ForgetPasswordForm.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D80E24B26986FC200DA6B43 /* ForgetPasswordForm.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +26,14 @@
 		0D74CF7226972810002F99BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0D74CF7426972810002F99BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0D74CF7926972812002F99BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0D74CF7C26972812002F99BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D74CF7E26972812002F99BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D74CF8426972870002F99BE /* ViewControllerPt2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPt2.swift; sourceTree = "<group>"; };
 		0D74CF8526972870002F99BE /* ViewControllerPt2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerPt2.xib; sourceTree = "<group>"; };
+		0D74CF8826974361002F99BE /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		0D74CF8926974361002F99BE /* ViewController2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController2.xib; sourceTree = "<group>"; };
+		0D80E248269864E900DA6B43 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../../../.Trash/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0D80E24A26986FC200DA6B43 /* ForgetPasswordForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordForm.swift; sourceTree = "<group>"; };
+		0D80E24B26986FC200DA6B43 /* ForgetPasswordForm.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordForm.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +70,14 @@
 				0D74CF7226972810002F99BE /* SceneDelegate.swift */,
 				0D74CF7426972810002F99BE /* ViewController.swift */,
 				0D74CF7926972812002F99BE /* Assets.xcassets */,
-				0D74CF7B26972812002F99BE /* LaunchScreen.storyboard */,
 				0D74CF7E26972812002F99BE /* Info.plist */,
+				0D80E248269864E900DA6B43 /* LaunchScreen.storyboard */,
 				0D74CF8426972870002F99BE /* ViewControllerPt2.swift */,
 				0D74CF8526972870002F99BE /* ViewControllerPt2.xib */,
+				0D74CF8826974361002F99BE /* ViewController2.swift */,
+				0D74CF8926974361002F99BE /* ViewController2.xib */,
+				0D80E24A26986FC200DA6B43 /* ForgetPasswordForm.swift */,
+				0D80E24B26986FC200DA6B43 /* ForgetPasswordForm.xib */,
 			);
 			path = XCriticalPt2;
 			sourceTree = "<group>";
@@ -127,9 +139,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D74CF7D26972812002F99BE /* LaunchScreen.storyboard in Resources */,
+				0D74CF8B26974361002F99BE /* ViewController2.xib in Resources */,
+				0D80E249269864E900DA6B43 /* LaunchScreen.storyboard in Resources */,
 				0D74CF7A26972812002F99BE /* Assets.xcassets in Resources */,
 				0D74CF8726972870002F99BE /* ViewControllerPt2.xib in Resources */,
+				0D80E24D26986FC200DA6B43 /* ForgetPasswordForm.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,25 +154,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D74CF8A26974361002F99BE /* ViewController2.swift in Sources */,
 				0D74CF7526972810002F99BE /* ViewController.swift in Sources */,
 				0D74CF7126972810002F99BE /* AppDelegate.swift in Sources */,
 				0D74CF7326972810002F99BE /* SceneDelegate.swift in Sources */,
 				0D74CF8626972870002F99BE /* ViewControllerPt2.swift in Sources */,
+				0D80E24C26986FC200DA6B43 /* ForgetPasswordForm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		0D74CF7B26972812002F99BE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0D74CF7C26972812002F99BE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0D74CF7F26972812002F99BE /* Debug */ = {

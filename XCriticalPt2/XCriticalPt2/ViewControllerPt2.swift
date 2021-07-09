@@ -11,6 +11,7 @@ class ViewControllerPt2: UIViewController {
 
     let blueColor = UIColor(red: 0.41, green: 0.483, blue: 0.867, alpha: 1)
     let dark = UIColor(red: 0.016, green: 0.02, blue: 0.055, alpha: 1)
+    var iconClick = true
     @IBOutlet weak var registrationButton: UIButton!
     @IBOutlet weak var enterButton: UIButton!
     @IBOutlet weak var imageViewer: UIImageView!
@@ -20,6 +21,58 @@ class ViewControllerPt2: UIViewController {
     @IBOutlet weak var enterEmailPlace: UITextField!
     @IBOutlet weak var enterPasswordPlace: UITextField!
     @IBOutlet weak var changeBrockerButton: UIButton!
+    @IBOutlet weak var mailLine: UIView!
+    @IBOutlet weak var passwordLine: UIView!
+    @IBOutlet weak var wrongMail: UILabel!
+    @IBOutlet weak var wrongPassword: UILabel!
+    @IBAction func forgetPasswordForm(_ sender: Any) {
+        
+        navigationController?.pushViewController(ForgetPasswordForm(), animated: true)    }
+    
+    @IBAction func moveToRegistrationForm(_ sender: Any) {
+        
+        navigationController?.pushViewController(ViewController2(), animated: true)
+    }
+    @IBAction func hideEyeButton(_ sender: UIButton) {
+        if (iconClick == true){
+            enterPasswordPlace.isSecureTextEntry = false
+            sender.setImage(UIImage(named:"Subtract"), for: .normal)
+
+        }
+        else {
+            enterPasswordPlace.isSecureTextEntry = true
+            sender.setImage(UIImage(named:"Union"), for: .normal)        }
+        
+        iconClick = !iconClick
+        
+    }
+    @IBAction func moveToEnterWindowPositive(_ sender: Any) {
+        
+        if (enterEmailPlace.text == nil || enterEmailPlace.text == "")
+        {
+            wrongMail.isHidden = false
+            mailLine.backgroundColor = .red
+            
+        }
+        else
+        {
+            wrongMail.isHidden = true
+            mailLine.backgroundColor = .lightGray
+            
+        }
+        if (enterPasswordPlace.text == nil || enterPasswordPlace.text == "")
+        {
+            wrongPassword.isHidden = false
+            passwordLine.backgroundColor = .red
+        }
+        else
+        {
+            wrongPassword.isHidden = true
+            passwordLine.backgroundColor = .lightGray
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
    
@@ -56,6 +109,8 @@ class ViewControllerPt2: UIViewController {
         self.labelPassword.text = "Пароль"
         forgotPasswordButton.setTitle("Забыли пароль?", for: .normal)
         changeBrockerButton.setTitle("Сменить брокера", for: .normal)
+        self.wrongMail.text = "Неверный пароль"
+        self.wrongPassword.text = "Неверный пароль"
         
     }
     
